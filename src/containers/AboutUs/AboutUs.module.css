@@ -1,6 +1,8 @@
 .AboutUs{
 
 }
+
+
 .column {
   float: left;
   width: 33.33%;
@@ -14,9 +16,33 @@
   display: table;
   clear: both;
 }
-  @media (max-width: 600px) {
-    section {
-      -webkit-flex-direction: column;
-      flex-direction: column;
-    }
-  }
+
+.midcolumn1 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.midcolumn2 {
+  float: left;
+  width: 70%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+ 
+
+
+.c1column  {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.c2column1{
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
