@@ -30,7 +30,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <div>
-          <Layout> {routes} </Layout>
+      EP
          
         </div>
       </div>
