@@ -1,5 +1,8 @@
 import React from 'react'
 import classes from "./Home.module.css";
+import SideNavigation from "../../components/SideNavigation/SideNavigation";
+import Header from '../../components/Shared/Header/Header';
+import Footer from '../../components/Shared/Footer/Footer';
 class Home extends React.Component {
     state = {  }
     render() { 
@@ -7,37 +10,13 @@ class Home extends React.Component {
         const i2 = require('../../assets/images/i2.png'); 
         const i3 = require('../../assets/images/i3.png'); 
         return <div className={classes.Home}>
-            Home Landing page
             <div className={classes.toprow}>
-                <div className={classes.topcolumn1} style = {{backgroundColor:""}} >
-                </div>
-                <div className={classes.topcolumn2} style = {{backgroundColor:""}}  >
-                        <div className="card bg-light mb-3" style={{maxWidth: "18rem"}}>
-                        <div className="card-body">
-                                <p className="card-text">
-                                <span className="btn btn-primary">Logo</span>
-                                    <span className="btn btn-info">User Login</span>
-                                </p>
-                            </div>  
-                            <div className="card-header">Contact Us</div>
-                            <div className="card-body">
-                                <p className="card-text">Admin@xyz.com</p>
-                                <p className="card-text">+44 9888787877</p>
-                                <p className="card-text">+44 7776676656 (Whats app)</p>
-                            </div>
-                            </div>
-                </div>
+                 <Header page="Home"></Header>
             </div>
             <div className={classes.toprow}>
-                <div className={classes.midcolumn1} style = {{height:"auto",backgroundColor:"",borderRight:"1px solid"}} >
+                <div className={classes.midcolumn1} style = {{height:"auto",backgroundColor:"black",borderRight:"1px solid"}} >
                     <div className="card bg-light mb-3" style={{maxWidth: "18rem;"}}>
-                        <div className="card-header">ABOUT US</div>
-                        <div className="card-header">PATHWAY OFFERING</div>
-                        <div className="card-header">INTERACTION CENTER</div>
-                        <div className="card-header">ANALYTICS</div>
-                        <div className="card-header">AFFILICATION & EVENTS</div>
-                        <div className="card-header">KNOWDLEDGE STUDIO</div>
-                        <div className="card-header">PRICING  T&CS</div>
+                        <SideNavigation></SideNavigation>
                     </div>
                 </div>
                 <div className={classes.midcolumn2} style = {{backgroundColor:""}}  >
@@ -99,10 +78,13 @@ class Home extends React.Component {
                         <p className="card-text"> a</p>
                     </div>
                     <div className="card-body">
-                        <p className="card-text"> a</p>
+                        <p className="card-text">as a</p>
                     </div>
                     </div>
-                </div>
+                </div> 
+            </div>  
+            <div className={classes.row}>
+               <Footer></Footer>
             </div>
             </div>;
     }

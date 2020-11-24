@@ -1,0 +1,19 @@
+.Header{
+
+}
+
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  

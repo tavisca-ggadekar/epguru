@@ -1,5 +1,5 @@
 .AboutUs{
-
+ 
 }
 
 
@@ -9,7 +9,9 @@
   padding: 10px;
   height: 300px; /* Should be removed. Only for demonstration */
 }
-
+.row{
+   
+}
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -21,14 +23,14 @@
   float: left;
   width: 30%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: auto; /* height: 300px; Should be removed. Only for demonstration */
 }
 
 .midcolumn2 {
   float: left;
   width: 70%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: auto; /* Should be removed. Only for demonstration */
 }
 
  
@@ -46,3 +48,4 @@
   padding: 10px;
   height: 300px; /* Should be removed. Only for demonstration */
 }
+

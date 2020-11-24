@@ -31,6 +31,7 @@ class App extends React.Component {
       <div className="App">
         <div>
           <Layout> {routes} </Layout>
+         
         </div>
       </div>
     );
