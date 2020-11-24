@@ -1,53 +1,20 @@
 import React from 'react'
 import classes from "./Index.module.css";
+import SideNavigation from "../../components/SideNavigation/SideNavigation";
+import Header from '../../components/Shared/Header/Header';
+import Footer from '../../components/Shared/Footer/Footer';
 class Index extends React.Component {
     state = {  }
     render() { 
+       
         return <div className={classes.Index}>
-            Index Integration page
             <div className={classes.row}>
-                <div className={classes.column} style = {{backgroundColor:""}} >
-                    <h2>  1</h2>
-                    <p>Home button</p>
-                </div>
-                <div className={classes.column} style = {{backgroundColor:""}}  >
-                        <div className="card bg-light mb-3" style={{maxWidth: "18rem"}}>
-                           <div className="card-body">
-                                <p className="card-text">
-                                <span className="btn btn-primary">Enterprice Gurukul</span>
-                                </p>
-                            </div>  
-                            <div className="card-body">
-                                <p className="card-text">Interaction center</p>
-                            </div>
-                        </div>
-                </div>
-                <div className={classes.column} style = {{backgroundColor:""}}  >
-                        <div className="card bg-light mb-3" style={{maxWidth: "18rem"}}>
-                           <div className="card-body">
-                                <p className="card-text">
-                                <span className="btn btn-primary" style={{height:"30px"}}>Logo with home link</span>
-                                </p>
-                            </div>  
-                            <div className="card-body">
-                                <p className="card-text">Search: <input type='text'></input></p>
-                            </div>
-                            <div className="card-header">Contact Us</div>
-                            <div className="card-body">
-                                <p className="card-text">Admin@xyz.com</p>
-                                <p className="card-text">+44 9888787877</p>
-                            </div>
-                        </div>
-                </div>
+                <Header page="Interaction center"></Header>
             </div>
             <div className={classes.row}>
                 <div className={classes.midcolumn1} style = {{backgroundColor:""}} >
                     <div className="card bg-light mb-3" style={{maxWidth: "18rem;"}}>
-                            <div className="card-header">PATHWAY OFFERING</div>
-                            <div className="card-header">ANALYTICS</div>
-                            <div className="card-header">AFFILICATION & EVENTS</div>
-                            <div className="card-header">KNOWDLEDGE STUDIO</div>
-                            <div className="card-header">PRICING  T&CS</div>
+                            <SideNavigation></SideNavigation>
                         </div>
                 </div>
                 <div className={classes.midcolumn2} style = {{backgroundColor:""}} >
@@ -220,6 +187,9 @@ class Index extends React.Component {
                         CHat window
                     </div>
                 </div>
+            </div>
+            <div className={classes.row}>
+               <Footer></Footer>
             </div>
             </div>;
     }

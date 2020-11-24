@@ -8,13 +8,13 @@
   float: left;
   width: 75%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: auto; /* Should be removed. Only for demonstration */
 }
 .topcolumn2 {
   float: left;
   width: 25%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: auto; /* Should be removed. Only for demonstration */
 }
 /* Clear floats after the columns */
 .toprow:after {
@@ -27,14 +27,14 @@
   float: left;
   width: 30%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: auto; /*300px Should be removed. Only for demonstration */
 }
 
 .midcolumn2 {
   float: left;
   width: 70%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: auto; /* Should be removed. Only for demonstration */
 }
 /* Clear floats after the columns */
 .row:after {

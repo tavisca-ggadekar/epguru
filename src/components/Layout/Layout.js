@@ -31,7 +31,7 @@ class Layout extends React.Component {
           open={this.state.showSideDrawer}
           closed={this.sideDrawerClosedHandler}
         ></SideDrawer>
-        <main className={classes.Content}>{this.props.children}</main>
+        <main className={classes.Content}>{this.props.children}  </main> 
       </Aux>
     );
   }

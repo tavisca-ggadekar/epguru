@@ -1,57 +1,23 @@
 import React from 'react'
 import classes from "./AboutUs.module.css";
+import SideNavigation from "../../components/SideNavigation/SideNavigation";
+import Header from '../../components/Shared/Header/Header';
+import Footer from '../../components/Shared/Footer/Footer';
 class AboutUs extends React.Component {
     state = {  }
     render() { 
         const i1 = require('../../assets/images/i1.png'); 
         const i2 = require('../../assets/images/i2.png'); 
         const i3 = require('../../assets/images/i3.png'); 
-        return <div className={classes.AboutUs}>AboutUs
+        return <div className={classes.AboutUs}> 
                  <div className={classes.row}>
-                <div className={classes.column} style = {{backgroundColor:""}} >
-                    <h2>  1</h2>
-                    <p>Home button</p>
-                </div>
-                <div className={classes.column} style = {{backgroundColor:""}}  >
-                        <div className="card bg-light mb-3" style={{maxWidth: "18rem"}}>
-                           <div className="card-body">
-                                <p className="card-text">
-                                <span className="btn btn-primary">Enterprice Gurukul</span>
-                                </p>
-                            </div>  
-                            <div className="card-body">
-                                <p className="card-text">AboutUs</p>
-                            </div>
-                        </div>
-                </div>
-                <div className={classes.column} style = {{backgroundColor:""}}  >
-                        <div className="card bg-light mb-3" style={{maxWidth: "18rem"}}>
-                           <div className="card-body">
-                                <p className="card-text">
-                                <span className="btn btn-primary" style={{height:"30px"}}>Logo with home link</span>
-                                </p>
-                            </div>  
-                            <div className="card-body">
-                                <p className="card-text">Search: <input type='text'></input></p>
-                            </div>
-                            <div className="card-header">Contact Us</div>
-                            <div className="card-body">
-                                <p className="card-text">Admin@xyz.com</p>
-                                <p className="card-text">+44 9888787877</p>
-                            </div>
-                        </div>
-                </div>
+                 <Header page="About Us"></Header>
             </div>
             <div className={classes.row}>
                 <div className={classes.midcolumn1} style = {{backgroundColor:""}} >
                     <div className="card bg-light mb-3" style={{maxWidth: "18rem;"}}>
-                            <div className="card-header">PATHWAY OFFERING</div>
-                            <div className="card-header">INTERACTION CENTER</div>
-                            <div className="card-header">ANALYTICS</div>
-                            <div className="card-header">AFFILICATION & EVENTS</div>
-                            <div className="card-header">KNOWDLEDGE STUDIO</div>
-                            <div className="card-header">PRICING  T&CS</div>
-                        </div>
+                        <SideNavigation></SideNavigation>
+                    </div>
                 </div>
                 <div className={classes.midcolumn2} style = {{backgroundColor:""}} >
                     <div className={classes.row}>
@@ -130,7 +96,10 @@ class AboutUs extends React.Component {
                     </div>  
                 </div>
             </div>
-                </div>;
+            <div className={classes.row}>
+               <Footer></Footer>
+            </div>
+        </div>;
     }
 }
  
